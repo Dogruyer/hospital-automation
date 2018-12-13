@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block page_content %}
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="white-box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="white-box">
+                            <h3 class="box-title m-b-0">Doğruyer Otomasyon Projesi</h3>
+                            <p class="text-muted m-b-30 font-13">
+                                Aramak İstediğiniz Değeri Giriniz</p>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12">
+                                    <form method="POST">
+                                        <label>Otomasyon</label>
+                                        <input type="text"
+                                               name="aranan" class="form-control"
+                                               placeholder="" required autofocus>
+                                        <br/>
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}"/>
+                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">
+                                            Submit
+                                        </button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}

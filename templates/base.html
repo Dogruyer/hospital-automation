@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ STATIC_URL }}plugins/images/favicon.png">
-    <title>FRICKE SUPPLIERS</title>
+    <title>Doğruyer </title>
     <!-- Bootstrap Core CSS -->
     <link href="{{STATIC_URL}}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{STATIC_URL}}plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -124,14 +124,76 @@
 {#                    <a href="/" class="waves-effect active"><i class="mdi mdi-clipboard-text fa-fw"></i> <span#}
 {#                        class="hide-menu">Anasayfa</span></a>#}
 {#                </li>#}
-                <li><a href="/" class="waves-effect active"><i class="mdi mdi-chart-bar fa-fw"></i> <span
-                        class="hide-menu">Queries<span class="fa arrow"></span></span></a>
+                <li><a href="/" class="waves-effect active"><i class="mdi mdi-clipboard-text fa-fw"></i> <span
+                        class="hide-menu">Hastane<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="/supno"><i class="fa-fw">S</i><span class="hide-menu">Supplier No</span></a></li>
-                        <li><a href="/year"><i class="fa-fw">Y</i><span class="hide-menu">Year</span></a></li>
-                        <li><a href="/name"><i class="fa-fw">N</i><span class="hide-menu">Name</span></a></li>
-                        <li><a href="/all"><i class="fa-fw">V</i><span class="hide-menu">All Years Bar Chart</span></a></li>
-                        <li><a href="/all"><i class="fa-fw">V</i><span class="hide-menu">All Years Extended Bar Chart</span></a></li>
+                        <li><a href="/hastane-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Hastane Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-account fa-fw"></i> <span
+                        class="hide-menu">Doktor<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/doktor-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Doktor Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span
+                        class="hide-menu">Klinikler<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/klinik-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Klinik Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-av-timer fa-fw"></i> <span
+                        class="hide-menu">Randevu<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/randevu-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Hastane Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-account-location fa-fw"></i> <span
+                        class="hide-menu">Yöneticiler<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/yonetici-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Hastane Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-table fa-fw"></i> <span
+                        class="hide-menu">İzinler<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/izin-goruntule"><i class="fa-fw">G</i><span class="hide-menu">İzinler Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-account-circle fa-fw"></i> <span
+                        class="hide-menu">Hasta<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/hasta-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Hasta Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-alert-octagram fa-fw"></i> <span
+                        class="hide-menu">İdari Kadro<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/idarikadro-goruntule"><i class="fa-fw">G</i><span class="hide-menu">İdari Kadro Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-barcode fa-fw"></i> <span
+                        class="hide-menu">Hastalık<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/hastalik-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Hastalik Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-bell fa-fw"></i> <span
+                        class="hide-menu">Teşhis<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/teshis-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Teşhis Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-bootstrap fa-fw"></i> <span
+                        class="hide-menu">İlaç<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/ilac-goruntule"><i class="fa-fw">G</i><span class="hide-menu">İlaç Görüntüle</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/" class="waves-effect"><i class="mdi mdi-black-mesa fa-fw"></i> <span
+                        class="hide-menu">Reçete<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/recete-goruntule"><i class="fa-fw">G</i><span class="hide-menu">Reçete Görüntüle</span></a></li>
                     </ul>
                 </li>
 {#                <li><a href="/logout" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Log out</span></a>#}
@@ -149,7 +211,7 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">Fricke Suppliers</h4></div>
+                    <h4 class="page-title">Doğruyer Yazılım</h4></div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <ol class="breadcrumb">
                         <li><a href="/">Anasayfa</a></li>
